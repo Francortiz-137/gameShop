@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root{
+    --primary: #222222;
+    --secondary: #D01418;
+    --twitter: #14AED0;
+    --facebook: #1476D0;
+    --instagram: #CE0CFF;
+}
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img{
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+h1{
+    color:#ffffff;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.logo-color-secondary{
+    color: var(--secondary);
+    font-size: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav{
+    display: none;
+}
+
+.burger{
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-right: 2rem;
+}
+/* ---------------------------------------------------- */
+
+/* ----------------------Banner------------------------ */
+
+.banner {
+    background-image: url(../img/banner.png);
+    width: 100%;
+    min-height: calc(75vh - (64px * 2));
+    display: flex;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2{
+    color: white;
+    font-size: 3rem;
+    max-width: 80%;
+    text-align: center;
+}
+
+.banner h2>.sale{
+    color: var(--secondary);
+    font-size: inherit;
+}
+
+.banner button{
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+/* --------------------Highlights------------------------- */
+
+.highlights{
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.highlights h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.highlights article{
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+
+.highlights article .card-header{
+    padding: 3rem 5rem;
+    border-bottom: 0.2px solid var(--primary);
+}
+
+.highlights article .card-body{
+    padding: 2rem 5rem;
+}
+
+.highlights article .price{
+    font-size: 2rem;
+}
+
+.highlights article .installments{
+    font-size: 1.3rem;
+}
+
+.highlights article .delivery{
+    font-size: 1rem;
+    color: green;
+}
+
+/* ------------------------Products---------------------- */
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem auto;
+    background-color: #F3F3F3;
+}
+
+.categories h3{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.categories .categories-container{
+    width: 80%;
+    padding-bottom: 5rem;
+}
+
+.categories article{
+    margin-bottom: 2rem;
+    height: 110px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+    cursor:pointer;
+}
+
+.categories article p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.gaming-chair{
+    
+    text-align: right;
+    background-image: url("../img/banner-gaming-chair.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.computers{
+    text-align: right;
+    background-image: url("../img/banner-pc.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+footer{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo p{
+    color:#ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.rrss-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.rrss-container p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.rrss-container ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.social-icons li i{
+    font-size: 3rem;
+}
+
+.fa-facebook-f{
+    color: var(--facebook);
+}
+
+.fa-instagram{
+    color: var(--instagram);
+}
+
+.fa-twitter{
+    color: var(--twitter);
+}
+
+.bottom{
+    background-color: #C4C4C4;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 440px) {
+
+    header{
+        display: flex;
+    }
+
+    header i.burger{
+        display: none;
+    }
+
+    header .logo{
+        margin-left: 2rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    nav ul li a{
+        color: white;
+        margin-right: 1rem;
+        font-size: 1.6em;
+    }
+
+    nav i.cart{
+        color: var(--secondary);
+        font-size: 2.5rem;
+        padding: 2rem;
+        margin-right: 2rem;
+    }
+
+
+    .highlights-container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .categories .categories-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 11rem;
+
+    }
+    .categories .categories-container article{
+        width: 50%;
+        max-width: 360px;
+    }
+
+    .categories .categories-container a{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        padding: 0 5rem;
+    }
+
+    .rrss-container ul{
+        justify-content: space-between;
+    }
+}
